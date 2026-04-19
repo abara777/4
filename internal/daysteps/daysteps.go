@@ -66,7 +66,6 @@ func DayActionInfo(data string, weight, height float64) string {
 	if err != nil {
 		return fmt.Sprint(err)
 	}
-
 	return fmt.Sprintf("Количество шагов: %d.\nДистанция составила %.2f км.\nВы сожгли %.2f ккал.\n", steps, distance, burnt)
 
 }
