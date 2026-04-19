@@ -23,7 +23,6 @@ func parseTraining(data string) (int, string, time.Duration, error) {
 	if len(d) != 3 {
 		return 0, "", 0 * time.Hour, errors.New("неправильный формат строки")
 	}
-
 	steps, err := strconv.Atoi(d[0])
 
 	if err != nil {
